@@ -4,14 +4,6 @@ public class ProductManager {
     protected ProductManager(ProductRepository repository) {
         this.repository = repository;
     }
-
-    Product product1 = new Book(1, "Book", 399, "Pushkin");
-    Product product2 = new Book(11, "Book2", 359, "Pushkin");
-    Product product3 = new Smartphone(12, "Phone 1", 9999, "Nokia");
-    Product product4 = new Smartphone(32, "Phone 2", 8999, "Nokia");
-    Product product5 = new Product(23, "Ball", 599);
-    Product product6 = new Product(44, "Ball", 499);
-
     public void add(Product product) {
         repository.saveProduct(product);
     }

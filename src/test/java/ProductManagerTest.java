@@ -3,6 +3,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+//Вау, данные забыл удалить! =))
+
 class ProductManagerTest {
 
     @Test
@@ -10,6 +12,8 @@ class ProductManagerTest {
     public void testSearchProduct() {
         ProductRepository repo = new ProductRepository();
         ProductManager manager = new ProductManager(repo);
+
+        //Вау, данные забыл удалить! =)) Спасибо!!!
 
         Product product1 = new Book(1, "Book", 399, "Pushkin");
         Product product2 = new Book(11, "Book2", 359, "Pushkin");
