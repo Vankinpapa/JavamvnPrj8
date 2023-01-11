@@ -4,6 +4,7 @@ public class ProductManager {
     protected ProductManager(ProductRepository repository) {
         this.repository = repository;
     }
+
     public void add(Product product) {
         repository.saveProduct(product);
     }
